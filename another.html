@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NEPSE Online Registration</title>
+</head>
+<body>
+
+    <h2 align="center">NEPAL STOCK EXCHANGE</h2>
+    <h3 align="center">Online Registration Form</h3>
+
+    <hr>
+
+    <h3>Registration Steps</h3>
+    <ol>
+        <li>General Details</li>
+        <li>Address Details</li>
+        <li>Bank Details</li>
+        <li>Depository Details</li>
+        <li>Documents Upload</li>
+        <li>User Agreement</li>
+    </ol>
+
+    <hr>
+
+    <form>
+
+        <!-- 1. GENERAL DETAILS -->
+        <fieldset>
+            <legend><h3>1. General Details</h3></legend>
+
+            <label>Referred By (Client Code)</label><br>
+            <input type="text" name="referredBy" placeholder="Client Code">
+            <br><br>
+
+            <label>Client Type *</label><br>
+            <select name="clientType" required>
+                <option value="">Select Client Type</option>
+                <option value="Individual">Individual</option>
+                <option value="Corporate">Corporate</option>
+            </select>
+            <br><br>
+
+            <label>Mobile Number *</label><br>
+            <input type="tel" name="mobile" placeholder="Mobile Number" required>
+            <br><br>
+
+            <label>Online / Offline *</label><br>
+            <input type="radio" name="mode" value="online" checked> Online
+            <input type="radio" name="mode" value="offline"> Offline
+            <br><br>
+
+            <label>Member Branch *</label><br>
+            <select name="branch" required>
+                <option value="">Select Member Branch</option>
+                <option value="Kathmandu">Kathmandu</option>
+                <option value="Pokhara">Pokhara</option>
+                <option value="Biratnagar">Biratnagar</option>
+                <option value="Bhadrapur">Bhadrapur</option>
+            </select>
+            <br><br>
+
+            <label>PAN Number</label><br>
+            <input type="text" name="pan" placeholder="PAN Number">
+            <br><br>
+
+            <label>Email *</label><br>
+            <input type="email" name="email" placeholder="Email" required>
+            <br><br>
+
+            <label>First Name *</label><br>
+            <input type="text" name="firstName" required>
+            <br><br>
+
+            <label>Middle Name</label><br>
+            <input type="text" name="middleName">
+            <br><br>
+
+            <label>Last Name *</label><br>
+            <input type="text" name="lastName" required>
+            <br><br>
+
+            <label>Date of Birth *</label><br>
+            <input type="date" name="dob" required>
+            <br><br>
+
+            <label>Gender *</label><br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+            <br><br>
+
+            <label>Father's Name *</label><br>
+            <input type="text" name="fatherName" required>
+            <br><br>
+
+            <label>Mother's Name *</label><br>
+            <input type="text" name="motherName" required>
+            <br><br>
+
+            <label>Grandfather's Name</label><br>
+            <input type="text" name="grandfatherName">
+            <br><br>
+
+            <label>Is NRI?</label><br>
+            <input type="radio" name="nri" value="yes"> Yes
+            <input type="radio" name="nri" value="no" checked> No
+            <br><br>
+
+            <label>Is Minor?</label><br>
+            <input type="radio" name="minor" value="yes"> Yes
+            <input type="radio" name="minor" value="no" checked> No
+        </fieldset>
+
+        <br>
+
+        <!-- 2. ADDRESS DETAILS -->
+        <fieldset>
+            <legend><h3>2. Address Details</h3></legend>
+
+            <h4>Permanent Address</h4>
+
+            <label>Province *</label><br>
+            <select name="province" required>
+                <option value="">Select Province</option>
+                <option>Koshi</option>
+                <option>Madhesh</option>
+                <option>Bagmati</option>
+                <option>Gandaki</option>
+                <option>Lumbini</option>
+                <option>Karnali</option>
+                <option>Sudurpashchim</option>
+            </select>
+            <br><br>
+
+            <label>District *</label><br>
+            <input type="text" name="district" required>
+            <br><br>
+
+            <label>Municipality / Rural Municipality *</label><br>
+            <input type="text" name="municipality" required>
+            <br><br>
+
+            <label>Ward Number *</label><br>
+            <input type="number" name="ward" required>
+            <br><br>
+
+            <label>Tole / Street *</label><br>
+            <input type="text" name="tole" required>
+            <br><br>
+
+            <label>House Number</label><br>
+            <input type="text" name="houseNumber">
+            <br><br>
+
+            <h4>Temporary Address</h4>
+
+            <label>Province</label><br>
+            <input type="text" name="tempProvince">
+            <br><br>
+
+            <label>District</label><br>
+            <input type="text" name="tempDistrict">
+            <br><br>
+
+            <label>Municipality / Rural Municipality</label><br>
+            <input type="text" name="tempMunicipality">
+            <br><br>
+
+            <label>Ward Number</label><br>
+            <input type="number" name="tempWard">
+            <br><br>
+
+            <label>Tole / Street</label><br>
+            <input type="text" name="tempTole">
+            <br><br>
+
+            <label>
+                <input type="checkbox" name="sameAddress">
+                Temporary address is same as permanent address
+            </label>
+        </fieldset>
+
+        <br>
+
+        <!-- 3. BANK DETAILS -->
+        <fieldset>
+            <legend><h3>3. Bank Details</h3></legend>
+
+            <label>Bank Name *</label><br>
+            <select name="bankName" required>
+                <option value="">Select Bank</option>
+                <option>Nabil Bank</option>
+                <option>Global IME Bank</option>
+                <option>Nepal Investment Mega Bank</option>
+                <option>NIC Asia Bank</option>
+                <option>Everest Bank</option>
+                <option>Himalayan Bank</option>
+                <option>Rastriya Banijya Bank</option>
+                <option>Sanima Bank</option>
+                <option>Kumari Bank</option>
+                <option>Prabhu Bank</option>
+                <option>Machhapuchchhre Bank</option>
+                <option>Laxmi Sunrise Bank</option>
+                <option>Other</option>
+            </select>
+            <br><br>
+
+            <label>Branch Name *</label><br>
+            <input type="text" name="bankBranch" required>
+            <br><br>
+
+            <label>Account Holder Name *</label><br>
+            <input type="text" name="accountHolder" required>
+            <br><br>
+
+            <label>Bank Account Number *</label><br>
+            <input type="text" name="accountNumber" required>
+            <br><br>
+
+            <label>Account Type</label><br>
+            <select name="accountType">
+                <option value="">Select Account Type</option>
+                <option>Savings</option>
+                <option>Current</option>
+            </select>
+            <br><br>
+
+            <label>Upload Cheque / Bank Document</label><br>
+            <input type="file" name="bankDocument">
+        </fieldset>
+
+        <br>
+
+        <!-- 4. DEPOSITORY DETAILS -->
+        <fieldset>
+            <legend><h3>4. Depository Details</h3></legend>
+
+            <label>DP Name *</label><br>
+            <input type="text" name="dpName" required>
+            <br><br>
+
+            <label>DP ID *</label><br>
+            <input type="text" name="dpId" required>
+            <br><br>
+
+            <label>BOID (Demat Number) *</label><br>
+            <input type="text" name="boid" placeholder="130XXXXXXXXXXXXX" required>
+            <br><br>
+
+            <label>Demat Account Number *</label><br>
+            <input type="text" name="dematNumber" required>
+            <br><br>
+
+            <label>CRN Number</label><br>
+            <input type="text" name="crn">
+            <br><br>
+
+            <label>Registered Name in Demat</label><br>
+            <input type="text" name="dematName">
+        </fieldset>
+
+        <br>
+
+        <!-- 5. DOCUMENTS UPLOAD -->
+        <fieldset>
+            <legend><h3>5. Documents Upload</h3></legend>
+
+            <label>Citizenship Front *</label><br>
+            <input type="file" name="citizenshipFront" accept="image/*" required>
+            <br><br>
+
+            <label>Citizenship Back *</label><br>
+            <input type="file" name="citizenshipBack" accept="image/*" required>
+            <br><br>
+
+            <label>Passport Size Photo *</label><br>
+            <input type="file" name="photo" accept="image/*" required>
+            <br><br>
+
+            <label>Signature *</label><br>
+            <input type="file" name="signature" accept="image/*" required>
+            <br><br>
+
+            <label>Thumbprint</label><br>
+            <input type="file" name="thumbprint" accept="image/*">
+            <br><br>
+
+            <label>National Identity Card</label><br>
+            <input type="file" name="nationalId" accept="image/*">
+            <br><br>
+
+            <label>Selfie with Citizenship</label><br>
+            <input type="file" name="selfie" accept="image/*">
+            <br><br>
+
+            <label>Bank Document</label><br>
+            <input type="file" name="bankDocumentUpload">
+            <br><br>
+
+            <label>Other Documents</label><br>
+            <input type="file" name="otherDocuments" multiple>
+        </fieldset>
+
+        <br>
+
+        <!-- 6. USER AGREEMENT -->
+        <fieldset>
+            <legend><h3>6. User Agreement</h3></legend>
+
+            <h4>Terms and Conditions</h4>
+
+            <p>
+                I hereby declare that the information provided in this registration
+                form is true, correct and complete to the best of my knowledge.
+            </p>
+
+            <p>
+                I agree to follow the rules, regulations and policies of the
+                Nepal Stock Exchange and the concerned broker.
+            </p>
+
+            <p>
+                I understand that my account will be subject to verification
+                and approval by the broker.
+            </p>
+
+            <p>
+                I agree to use the trading system responsibly and keep my
+                login credentials confidential.
+            </p>
+
+            <br>
+
+            <input type="checkbox" name="agreement" required>
+            I have read and agree to the User Agreement and Terms and Conditions.
+        </fieldset>
+
+        <br><br>
+
+        <!-- FORM BUTTONS -->
+        <input type="reset" value="Cancel Application">
+
+        <input type="submit" value="Submit Application">
+
+    </form>
+
+</body>
+</html>
