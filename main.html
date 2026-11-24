@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>General Details Form</title>
+</head>
+<body>
+
+    <h2>Registration Steps</h2>
+    <p>
+        1. General Details →
+        2. Address Details →
+        3. Bank Details →
+        4. Depository Details →
+        5. Documents Upload →
+        6. User Agreement
+    </p>
+
+    <hr>
+
+    <h2 align="center">General Details</h2>
+
+    <form>
+
+        <label>Referred By</label><br>
+        <input type="text" name="referredby" placeholder="Client Code" size="120">
+        <br><br>
+
+        <label>Client Type</label><br>
+        <select name="clienttype">
+            <option>Select Client Type</option>
+            <option>Individual</option>
+            <option>Corporate</option>
+        </select>
+        <br><br>
+
+        <label>Mobile Number *</label><br>
+        <input type="tel" name="mobile" placeholder="Mobile Number" size="120" required>
+        <br><br>
+
+        <label>Online/Offline *</label><br>
+        <input type="radio" name="mode" value="online" checked> ONLINE
+        <input type="radio" name="mode" value="offline"> OFFLINE
+        <br><br>
+
+        <label>Member Branch *</label><br>
+        <select name="branch" required>
+            <option>Select Member Branch</option>
+            <option>Branch 1</option>
+            <option>Branch 2</option>
+            <option>Branch 3</option>
+        </select>
+        <br><br>
+
+        <label>PAN Number</label><br>
+        <input type="text" name="pan" placeholder="PAN Number" size="120">
+        <br><br>
+
+        <label>Email *</label><br>
+        <input type="email" name="email" placeholder="Email" size="120" required>
+        <br><br>
+
+        <input type="submit" value="Next">
+
+    </form>
+
+</body>
+</html>
